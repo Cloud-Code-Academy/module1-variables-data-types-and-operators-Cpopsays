@@ -102,7 +102,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        Integer integerValue1 = 10;
+        Integer integerValue2 = 5;
+        Integer remainder = math.mod(integerValue1, integerValue2);
+        System.debug('print the value of remainder:'+' '+remainder);
+        Boolean hasRemainder = remainder;
+        return hasRemainder; // Replace null with the variable you used to store the result
     }
 
     /**
