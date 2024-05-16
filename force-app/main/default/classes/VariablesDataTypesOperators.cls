@@ -32,11 +32,12 @@ public with sharing class VariablesDataTypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a, Integer b) {  
-        Integer a = 1;
-        Integer b = 2;
-        Integer addNum = a + b;
-        System.debug('Q1: Addition. Expecting 3:' + ' ' + addNum);
-        return sumNum; 
+        if (a==null || b == null){
+            return null;
+            else {
+                return a + b;
+            }
+        }
     }
 
     /**
