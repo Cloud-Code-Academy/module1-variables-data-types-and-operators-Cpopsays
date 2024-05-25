@@ -113,7 +113,14 @@
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        if (num > 0) {
+            return true;
+            
+        }
+        else {
+            return false;
+        }
+        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
