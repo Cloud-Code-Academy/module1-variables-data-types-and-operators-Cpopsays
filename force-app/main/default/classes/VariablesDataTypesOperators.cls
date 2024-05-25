@@ -18,12 +18,12 @@
  * If statements are not specifically covered in the lesson this module, but review module 2 flow control section for an overview if needed.
  * Resources: https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/langCon_apex_if_else.htm 
  * 
- * @author CpopSays
+ * @author Your Name
  */
 
-public with sharing class VariablesDataTypesOperators {
+ public with sharing class VariablesDataTypesOperators {
     /**
-     * Question 1 - Attempted
+     * Question 1
      * Performs addition of two numbers.
      * If either of the numbers is null, return null.
      * Example: addition(1, 2) should return 3
@@ -32,16 +32,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return The sum of the two numbers, or null if either number is null.
      */
     public static Integer addition(Integer a, Integer b) {  
-        if (a==null || b == null){
-            return null;
-            else {
-                return a + b;
-            }
-        }
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
-     * Question 2 - Attempted
+     * Question 2
      * Performs subtraction of two numbers.
      * Example: subtraction(1, 2) should return -1
      * @param a The first number.
@@ -49,37 +44,23 @@ public with sharing class VariablesDataTypesOperators {
      * @return The difference between the two numbers.
      */
     public static Integer subtraction(Integer a, Integer b) {
-        Integer a = 10;
-        Integer b = 2;
-        Integer subtractNum = a - b;
-        System.debug('Q2: Subtraction. Expecting 8:' + ' ' + subtractNum);
-        return subtractNum; 
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
-     * Question 3 - Attempted
-     * ***********
-     * CPOP: if i did not declare a new value for a and b,
-     * would it work to just put Integer multiplyNum = a * b;?
-     * CPOP: YEs the variable was initialized in question 1.
-     * ***********
+     * Question 3
      * Performs multiplication of two numbers.
      * Example: multiplication(2, 3) should return 6
      * @param a The first number.
      * @param b The second number.
-     * @return The product of the two numberrs.
+     * @return The product of the two numbers.
      */
     public static Integer multiplication(Integer a, Integer b) {
-        Integer a = 5;
-        Integer b = 2;
-        Integer multiplyNum = a * b;
-        System.debug('Q3: Multiplication. Expecting 10:' + ' ' + multiplyNum);  
-        return multiplyNum; 
-
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
-     * Question 4 - Attempted
+     * Question 4
      * Performs division of two numbers.
      * If the denominator is zero, return 0 to avoid division by zero error.
      * Example: division(6, 3) should return 2
@@ -88,14 +69,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return The quotient of the division, or 0 if the denominator is zero.
      */
     public static Decimal division(Integer a, Integer b) {
-        Integer a = 100;
-        Integer b = 2;
-        Integer divideNum = a / b;
-        return divideNum; 
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
-     * Question 5 -  Attemptped
+     * Question 5
      * Checks if a number is even.
      * Example: isEven(2) should return true
      * This concept is not specifically covered in the content this week, but you can use the Math class and the modulus function to understand if the number is even or odd.
@@ -105,30 +83,22 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        Integer integerValue1 = 10;
-        Integer integerValue2 = 5;
-        Integer remainder = math.mod(integerValue1, integerValue2);
-        System.debug('print the value of remainder:'+' '+remainder);
-        Boolean hasRemainder = remainder;
-        return hasRemainder; 
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
-     * Question 6 -  Not sure how to do this. Id there a class that converts to positive
+     * Question 6
      * Checks if a number is positive.
      * Example: isPositive(2) should return true
      * @param num The number to check.
      * @return true if the number is positive, false otherwise.
      */
     public static Boolean isPositive(Integer num) {
-        //I need to set up logic 
-        //to check if negative and if negative we turn it positive
-        
         return null; // Replace null with the variable you used to store the result
     }
 
     /**
-     * Question 7 - Attempted
+     * Question 7
      * Concatenates two strings.
      * Example: concatenateStrings('Hello', 'World') should return 'HelloWorld'
      * @param str1 The first string.
@@ -136,15 +106,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return The concatenated string.
      */
     public static String concatenateStrings(String str1, String str2) {
-        String str1 = 'Hello';
-        String str2 = 'World';
-        String helloString = str1 +  str2;
-        System.debug('Q7: Cocatenate two strings. Should say hello world:' + ' ' + helloString);
-        return helloString; 
+        return null; // Replace null with the variable you used to store the result
     }
 
 	/**
-     * Question 8 - Started
+     * Question 8
 	 * Constructs a sentence by concatenating a given noun, verb, and ending punctuation.
 	 * The sentence is structured to begin with 'The', followed by the noun, then 'is', the verb, and finally the ending punctuation.
 	 * Example: createSentence('cat', 'jumping', '!') should return 'The cat is jumping!'
@@ -155,20 +121,11 @@ public with sharing class VariablesDataTypesOperators {
 	 * @return The complete sentence as a single String.
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
-        //just realized that for the previous qs I do not need to re declare the variable type.
-        //TODO go back and fix that
-        noun = 'plane';
-        verb = 'flying';
-        endingPunctuation = '.';
-        String space = ' ';
-        //TODO: if the method is already combining the above variables do I create a variable to cocatenate?
-        //what variable do i return? am i just double formatting? does not seem right.
-        String mySentence = noun + space + verb + space + endingPunctuation;
-		return mySentence;
+		return null; // Replace null with the variable you used to store the result
 	}
 
     /**
-     * Question 9 - Attempted
+     * Question 9
      * Checks if a date is in the past.
      * Example: isDateInPast(Date.newInstance(2019, 1, 1)) should return true
      * The concept of getting the current date is not specifically covered in the content this week, but you can use the Date class to get the current date.
@@ -177,13 +134,11 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        //create new instance of a date. This one is in the past so we antiicpate true.
-        Date dt = Date.newInstance(1960, 2, 17);
-        return isDateInPast(dt); // Replace null with the variable you used to store the result
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
-     * Question 10 - Attepted
+     * Question 10
      * Checks if a date is today or in the future.
      * Example: isDateTodayOrFuture(Date.newInstance(2019, 1, 1)) should return false
      * The concept of getting the current date is not specifically covered in the content this week, but you can use the Date class to get the current date.
@@ -192,10 +147,7 @@ public with sharing class VariablesDataTypesOperators {
      * @return True if the date is today or in the future, False otherwise.
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
-        Date dt = Date.newInstance(1990, 2, 2);
-        Date todayDate = Date.today(); 
-        Boolean isToday = dt == todayDate;
-        return isToday;
+        return null; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -224,7 +176,6 @@ public with sharing class VariablesDataTypesOperators {
      * @return The average of the three numbers.
      */
     public static Double averageOfThreeNumbers(Integer a, Integer b, Integer c) {
-        
         return null; // Replace null with the variable you used to store the result
     }
 
