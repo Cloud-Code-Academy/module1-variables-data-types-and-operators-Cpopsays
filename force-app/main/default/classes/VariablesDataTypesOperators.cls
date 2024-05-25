@@ -95,7 +95,14 @@
      * @return True if the number is even, False otherwise.
      */
     public static Boolean isEven(Integer num) {
-        return null; // Replace null with the variable you used to store the result
+        Integer remainder = math.mod(num, 2);
+        if (remainder==0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
