@@ -168,17 +168,16 @@
         Date firstDate = dt;
         //second date
         Date secondDate = Date.today();
+        //if date that calls the method (input) occurs after the second date (today), e.g. is in the future, the return value is negative so return false
         Integer daysBetween =firstDate.daysBetween(secondDate);
         if (daysBetween<0 || daysBetween==0) {
             return false;
             
         }
         else {
+        //If input date is in the past, i would return a positive value, so return true
         return true;
         }
-
-
-
         //return null; // Replace null with the variable you used to store the result
     }
 
@@ -192,7 +191,26 @@
      * @return True if the date is today or in the future, False otherwise.
      */
     public static Boolean isDateTodayOrFuture(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+        //date that calls the method
+        Date firstDate = dt;
+        //second date
+        Date secondDate = Date.today();
+        //if date that calls the method (input) occurs after second date (today), e.g. is in the future, the return value is negative. return true. 
+        Integer daysBetween =firstDate.daysBetween(secondDate);
+        if (daysBetween<0) {
+            return true;
+            
+        }
+        //if input date is 0 it is same day. return false. 
+        if (daysBetween==0) {
+            return false;
+        }
+        else {
+        //If input date is in the past, returns a positive value. return false.
+        return false;
+        }   
+        
+        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
