@@ -150,7 +150,8 @@
 	 * @return The complete sentence as a single String.
 	 */
 	public static String createSentence(String noun, String verb, String endingPunctuation) {
-		return null; // Replace null with the variable you used to store the result
+        return 'The'+' '+noun+' '+'is'+' '+verb+endingPunctuation;
+		//return null; // Replace null with the variable you used to store the result
 	}
 
     /**
@@ -163,7 +164,23 @@
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        return null; // Replace null with the variable you used to store the result
+        //*Currently not passing test
+        //date that calls the method
+        Date firstDate = dt;
+        //second date
+        Date secondDate = Date.today();
+        Integer daysBetween =firstDate.daysBetween(secondDate);
+        if (daysBetween<0 || daysBetween==0) {
+            return false;
+            
+        }
+        else {
+        return true;
+        }
+
+
+
+        //return null; // Replace null with the variable you used to store the result
     }
 
     /**
