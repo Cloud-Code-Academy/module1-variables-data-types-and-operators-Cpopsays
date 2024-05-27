@@ -260,14 +260,16 @@
      * @param a The first number.
      * @param b The second number.
      * @param c The third number.
+     * Catherine note: renamed them to aa, bb, cc respectively.
      * @return The result of the adjusted arithmetic expression.
      */
-    public static Integer adjustOrderOfOperations1(Integer a, Integer b, Integer c) {
+    public static Integer adjustOrderOfOperations1(Integer aa, Integer bb, Integer cc) {
         // Add parentheses around the addition operation so that it is performed before multiplication
-        Integer result = a + b * c;
+        //I kept getting a duplicate variable error with variables a, b, c. the code would not compile, so I renamed the variables aa, bb, cc and it passed. 
+        Integer result = (aa + bb) * cc;
 
         // Return the result
-        return null; // Replace null with the variable you used to store the result
+        return result; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -279,8 +281,8 @@
         // Add parentheses in the below expression to change the result.
         // The result of the expression as it is right now is 43. 
         // You should add parentheses so that the result of the expression becomes 8.
-        Integer answer = 48 - 15 + 5 * 2;
-        return null; // Replace null with the variable you used to store the result
+        Integer answer = 48 - ((15 + 5) * 2);
+        return answer; // Replace null with the variable you used to store the result
     }
 
     /**
