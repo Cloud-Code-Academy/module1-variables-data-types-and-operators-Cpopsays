@@ -317,8 +317,12 @@
         final Double SUBTRACT_FACTOR = 32.0;
         final Double MULTIPLY_FACTOR = 5.0;
         final Double DIVIDE_FACTOR = 9.0;
+        //initialize variable to hold result of formula. should be double since the method returns a Double
+        Double celsiusTemp;
+        //Formula: Celsius = (Fahrenheit - 32) * 5/9
+        celsiusTemp = (fahrenheit - SUBTRACT_FACTOR)*(MULTIPLY_FACTOR/DIVIDE_FACTOR);
     
-        return null; // Replace null with the variable you used to store the result
+        return celsiusTemp; // Replace null with the variable you used to store the result
     }
 
     
