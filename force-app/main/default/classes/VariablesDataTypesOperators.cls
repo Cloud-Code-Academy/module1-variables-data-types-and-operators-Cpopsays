@@ -164,7 +164,6 @@
      * @return True if the date is in the past, False otherwise.
      */
     public static Boolean isDateInPast(Date dt) {
-        //*Currently not passing test
         //date that calls the method
         Date firstDate = dt;
         //second date
