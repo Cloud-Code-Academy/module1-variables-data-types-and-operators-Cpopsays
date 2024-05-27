@@ -357,7 +357,9 @@
      */
     public static Decimal calculateWeeklyPaycheck(Decimal hourlyRate, Double numberOfHours) {
         // Calculate the weekly paycheck using the formula: rate multiplied by hours
-        return null; // Replace null with the variable you used to store the result
+        Decimal weeklyPaycheck;
+        weeklyPaycheck = (hourlyRate*numberOfHours);
+        return weeklyPaycheck; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -371,7 +373,9 @@
      * @return A Decimal representing the monthly paycheck.
      */
     public static Decimal calculateMonthlyPaycheck(Decimal hourlyRate, Double numberOfHours) {
-        return null; // Replace null with the variable you used to store the result
+        Decimal monthlyPaycheck;
+        monthlyPaycheck = (hourlyRate*numberOfHours) * 4;
+        return monthlyPaycheck; // Replace null with the variable you used to store the result
     }
 
     /**
