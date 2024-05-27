@@ -195,7 +195,7 @@
         Date firstDate = dt;
         //second date
         Date secondDate = Date.today();
-        //if date that calls the method (input) occurs after second date (today), e.g. is in the future, the return value is negative. return true. 
+        //if date that calls the method (input) occurs after second date (today), e.g. is in the future, the return value is negative. return true.
         Integer daysBetween =firstDate.daysBetween(secondDate);
         if (daysBetween<0) {
             return true;
@@ -223,9 +223,14 @@
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        Integer MILLISECONDS_PER_MINUTE = null; // Make this value a constant
-        Integer milliseconds;
-        return null; // Replace null with the variable you used to store the result
+        //Integer MILLISECONDS_PER_MINUTE = null; // Make this value a constant
+        final Integer MILLISECONDS_PER_MINUTE=60000;
+        //Integer milliseconds=null;
+        Integer milliseconds=(minutes*MILLISECONDS_PER_MINUTE);
+        //return null; // Replace null with the variable you used to store the result
+        return milliseconds; 
+
+
     }    
 
     /**
